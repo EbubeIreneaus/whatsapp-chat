@@ -284,7 +284,7 @@ const formatNumber = (num) => {
 <template>
   <div class="main">
     <div class="home cnt" v-if="comp == 'home'">
-      <img src="/img/login-logo.jpeg" alt="" class="mb-3" />
+      <img src="/img/login-logo.jpeg" alt="" class="mb-5" />
       <h5 class="text-light">Welcome to Whatsapp</h5>
       <p class="px-2">
         <small
@@ -293,7 +293,7 @@ const formatNumber = (num) => {
           <span class="text-info">Terms of Service</span></small
         >
       </p>
-      <button class="btn-ag" @click="comp = 'contact'">
+      <button class="btn-ag mt-2" @click="comp = 'contact'">
         <small>Agree and Continue</small>
       </button>
     </div>
@@ -434,7 +434,7 @@ const formatNumber = (num) => {
 
 .notification
     width: 90%
-    height: 100px
+    height: 110px
     top: -150px
     border-radius: 20px
     background-color: #FFF7F6
@@ -469,27 +469,29 @@ const formatNumber = (num) => {
     .cnt
         animation: slideInRight .5s ease
     .home
-
         display: flex
         flex-direction: column
-        justify-content: center
+        // justify-content: center
         align-items: center
         height: 100%
+        
+        
 
         img
-            width: 200px
+            width: 250px
+            margin-top: 35%
         p
             text-align: center
-            padding: 0 10px
+            padding: 12px 10px
             small
-                font-size: smaller
+                font-size: small
     .contact
         small
             font-size: smaller
 
     .btn-ag
         width: 250px
-        padding: 5px 0
+        padding: 10px 0
         outline: none
         box-shadow: none
         border: none
@@ -540,6 +542,7 @@ const formatNumber = (num) => {
     .info-phase
         margin-top: 100px
         .section
+          
             .profile-pics
                 width: 100px
                 height: 100px
@@ -548,9 +551,10 @@ const formatNumber = (num) => {
                     height: 100%
                     border-radius: 50%
             .form
+               
                 input
                     display: block
-                    width: 250px
+                    width: 310px
                     height: 50px
                     border: none
                     outline: none

@@ -5,7 +5,7 @@
 <template>
     
     <div class="load-screen d-flex flex-column justify-content-center align-items-center">
-        <i class="fab fa-whatsapp text-light"></i>
+        <i class="fab fa-whatsapp fa-xxl text-light mb-4"></i>
     
       </div>
 </template>
