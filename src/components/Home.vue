@@ -22,6 +22,10 @@
             </div>
         </div>
     </section>
+
+    <div class="floating-bar">
+        <button ><i class="fas fa-plus"></i></button>
+    </div>
   </div>
 </template>
 
@@ -72,5 +76,30 @@ section
         .added
             width: 50px
             // align-self: flex-start
-            
+
+.floating-bar
+    width: 350px
+    position: fixed
+    bottom: 5%
+    z-index: 999
+    
+
+    button
+        float: right
+        margin-right: 30px
+        width: 60px
+        height: 60px
+        border-radius: 50%
+        background-color: transparentize(green, .2)
+        outline: none
+        border: none
+        &:hover
+            background-color: lighten(transparentize(green, .2), 10)
+
+@media screen and (max-width: 464px)
+    .floating-bar
+        
+        width: 100%
+        
+           
 </style>
